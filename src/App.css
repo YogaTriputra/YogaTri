@@ -1,0 +1,85 @@
+body {
+  background: linear-gradient(to bottom, #C5BAFF, #C4D9FF, #E8F9FF, #FBFBFB);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.topnav {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+  text-align: center;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.topnav a:hover {
+  transform: translateY(-3px);
+  color: black;
+}
+
+.topnav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.topnav a:hover::after {
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding-bottom: 80px;
+}
+
+.hero-section {
+  text-align: left;
+  max-width: 600px;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 3px solid #7ac3ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  margin-top: 0;
+}
+
