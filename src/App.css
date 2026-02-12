@@ -272,3 +272,32 @@ section {
   border-radius: 0 3px 3px 0;
 }
 
+
+.contact-container {
+  min-height: calc(100vh - 80px);
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  text-align: center;
+  color: #46599e;
+  flex-wrap: wrap;
+  transform: translateY(-90px);
+}
+
+.contact-section {
+  text-align: center;
+  justify-content: center;
+  text-shadow: 0 2px 10px rgba(52, 16, 97, 0.1);
+  background-color: #e2d3ed;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0 10 25 rgba(58, 198, 243, 0.4);
+}
+
+.contact-section img {
+  max-width: 100px;
+  justify-content: center;
+}

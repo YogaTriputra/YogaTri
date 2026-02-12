@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 import img1 from './assets/foto/image.png';
-import img2 from './assets/foto/webbfgma.png';
+import img2 from './assets/foto/figmades.png';
 import profile1 from './assets/foto/WhatsApp Image 2026-02-06 at 11.27.37 PM.jpeg';
 import profile2 from './assets/foto/5306de7472434ba88ce1e518d96b3e0f.jpg';
+import githubIcon from './assets/foto/github_PNG80.png';
 
 function Slider() {
   const photos = [img1, img2];
@@ -117,6 +118,7 @@ function App() {
           <p className="content">Aku adalah salah satu mahasiswa aktif Universitas Amikom Yogyakarta. Aku sedang mempelajari dunia frontend dan suka design tampilan UI di Figma</p>
         </div>
       </section>
+
       <section id="about" className="about-container">
         <div className="about-section">
           <h1 className="work-content"> Design Showcase</h1>
@@ -126,6 +128,15 @@ Sekarang aku lagi fokus belajar HTML, CSS, React, dan eksplor desain di Figma. K
         </div>
       </section>
 
+      <section id="contact" className="contact-container">
+        <h1 className="github"> My Social Media </h1>
+        <div className="contact-section">
+          <img src={githubIcon} alt="GitHub" />
+          <a href="https://github.com/YogaTriputra">
+          <h2 className="github">My Github</h2>
+          </a>
+        </div>
+      </section>
     </div>
     
   );
