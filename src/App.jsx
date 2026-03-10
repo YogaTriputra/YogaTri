@@ -176,6 +176,7 @@ Sekarang aku lagi fokus belajar HTML, CSS, React, dan eksplor desain di Figma. K
           <a href="#" target="_blank" rel="noopener noreferrer" className="contact-section">
             <img src={linkedinIcon} alt="Linkedin" />
             <h2 className="github">Linkedin</h2>
+            <h3 className="soon">Soon!</h3>
           </a>
           <a href="https://www.instagram.com/yoggaaw._/" target="_blank" rel="noopener noreferrer" className="contact-section">
             <img src={instagramIcon} alt="Instagram" />

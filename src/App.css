@@ -44,7 +44,7 @@ transform: translateY(10px);
 }
 
 .topnav a {
-  color: #ffffff;
+  color: #e2cfff;
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
@@ -57,7 +57,7 @@ transform: translateY(10px);
 
 .topnav a:hover, .topnav a.active {
   transform: translateY(-3px);
-  color: rgb(32, 19, 118);
+  color: rgb(255, 255, 255);
 }
 
 .topnav a::after {
@@ -67,7 +67,7 @@ transform: translateY(10px);
   height: 2px;
   bottom: -7px;
   left: 0;
-  background-color: black;
+  background-color: rgb(248, 248, 255);
   transition: width 0.3s;
 }
 
@@ -395,4 +395,166 @@ section {
   font-size: 18px;
   margin: 0;
   color: #46599e;
+}
+
+
+/* mobile */
+@media (max-width: 768px) {
+  /* Reset general section spacing */
+  section {
+    padding: 40px 15px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Navigation */
+  .topnav {
+    width: 80%;
+    gap: 10px;
+    padding: 3px 5px;
+    top: 10px;
+  }
+
+  .topnav a {
+  color: #e2cfff;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.topnav a::after {
+    bottom: 3px;
+    color: #E8F9FF;
+}
+
+.topnav a:hover, .topnav a.active {
+  transform: translateY(-3px);
+  color: rgb(255, 255, 255);
+}
+
+  /* Hero Section */
+  .hero-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .hero-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .hero-section p {
+    font-size: 15px;
+  }
+
+  .photo-section {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px;
+  }
+
+  /* About Section */
+  .about-container {
+    gap: 15px;
+  }
+
+  .about-section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .about-section p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    transform: none;
+  }
+
+  /* Certificate Section */
+  .certificate-section-wrapper {
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .certificate-title {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+  .certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .certificate-card {
+    width: 100%;
+    filter: saturate(100%); /* Opsional: agar lebih terlihat di mobile */
+  }
+
+  .certificate-img {
+    height: 100px;
+    padding: 5px;
+  }
+
+  .certificate-info {
+    padding: 8px;
+  }
+
+  .certificate-info h2 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .certificate-info p {
+    font-size: 10px;
+  }
+
+  /* Contact Section */
+  .contact-container {
+    gap: 20px;
+  }
+
+  .contact-container h1 {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .contact-section {
+    width: 125px;
+    height: 125px;
+    padding: 15px;
+    filter: saturate(100%);
+  }
+
+  .contact-section img {
+    max-width: 45px;
+    margin-bottom: 8px;
+  }
+
+  .contact-section h2 {
+    font-size: 13px;
+  }
 }
